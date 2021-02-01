@@ -15,13 +15,13 @@ The distribution index is written in JSON. The general format of the index is as
     "rss": "https://westeroscraft.com/articles/index.rss",
     "servers": [
         {
-            "id": "Example_Server",
-            "name": "WesterosCraft Example Client",
-            "description": "Example WesterosCraft server. Connect for fun!",
+            "id": "Bedragoth",
+            "name": "Bedragoth",
+            "description": "Bedragoth serveur roleplay",
             "icon": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/example_icon.png",
             "version": "0.0.1",
-            "address": "mc.westeroscraft.com:1337",
-            "minecraftVersion": "1.11.2",
+            "address": "GAME-FR-43.MTXSERV.COM:27080",
+            "minecraftVersion": "1.12.2",
             "discord": {
                 "shortId": "Example",
                 "largeImageText": "WesterosCraft Example Server",
