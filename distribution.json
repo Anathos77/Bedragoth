@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "rss": "https://bedragothrp.forumactif.com/",
+  "rss": "<LINK TO RSS FEED>",
   "discord": {
     "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
     "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
@@ -13,15 +13,15 @@
       "description": "Bedragoth Running Minecraft 1.12.2 (Forge v14.23.5.2768)",
       "icon": null,
       "version": "1.0.0",
-      "address": "GAME-FR-43.MTXSERV.COM:27080",
+      "address": "GAME-FR-07.MTXSERV.COM:27120",
       "minecraftVersion": "1.12.2",
       "discord": {
         "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
         "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
       },
-      "mainServer": true,
-      "autoconnect": true,
+      "mainServer": false,
+      "autoconnect": false,
       "modules": [
         {
           "id": "net.minecraftforge:forge:1.12.2-14.23.5.2768:universal",
@@ -254,11 +254,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 926081,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/BetterFoliage-MC1.12-2.2.0.jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/BetterFoliage-MC1.12-2.2.0.jar",
             "MD5": "e05a720c5900b9bac4e01179abe8eef6"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -293,11 +290,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 60802913,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/ConquestReforged-3.0.2-mc1.12.2.jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/ConquestReforged-3.0.2-mc1.12.2.jar",
             "MD5": "4ad1a90bcbecae097b984a4ee3695929"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -332,11 +326,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 10440159,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/Custom-NPCs-Mod-1.12.2.jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/Custom-NPCs-Mod-1.12.2.jar",
             "MD5": "e8f289624d99a67ee3b78c6524b96b45"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -360,19 +351,6 @@
             "size": 22440403,
             "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/DrZharks+MoCreatures+Mod-12.0.5.jar",
             "MD5": "b02c58883f3d2956017639c6000d071e"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.boydti.fawe:com.boydti.fawe:3.5.1@jar",
-          "name": "FastAsyncWorldEdit",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 5599850,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/FastAsyncWorldEdit-forge112-19.07.25-58243b6-1278-22.3.1.jar",
-            "MD5": "cafb54c9f6ff22566a4801c30ac4d616"
           },
           "required": {
             "value": false
@@ -423,11 +401,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 939984,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/MorePlayerModels_1.12.2-(05Dec19).jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/MorePlayerModels_1.12.2-(05Dec19).jar",
             "MD5": "ca203e960d9d411674231c2a4a6ef1c1"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -449,11 +424,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 2589172,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/preview_OptiFine_1.12.2_HD_U_F4_pre3.jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/preview_OptiFine_1.12.2_HD_U_F4_pre3.jar",
             "MD5": "55623a3ac47fbf5adc5b3fea91531968"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -475,11 +447,8 @@
           "type": "ForgeMod",
           "artifact": {
             "size": 3641447,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/WesterosBlocks.jar",
+            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/required/WesterosBlocks.jar",
             "MD5": "a16f07a59af0dea6173645324c704963"
-          },
-          "required": {
-            "value": false
           }
         },
         {
@@ -490,19 +459,6 @@
             "size": 336574,
             "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/wings-1.0.6-1.12.2.jar",
             "MD5": "823fa6964d5d75fb33c164586763ddd6"
-          },
-          "required": {
-            "value": false
-          }
-        },
-        {
-          "id": "com.sk89q:worldedit:6.1.10-SNAPSHOT;3978-1e3af45@jar",
-          "name": "WorldEdit",
-          "type": "ForgeMod",
-          "artifact": {
-            "size": 1479104,
-            "url": "https://bedragoth.mtxserv.com/servers/Bedragoth-1.12.2/forgemods/optionalon/worldedit-forge-mc1.12.2-6.1.10-SNAPSHOT-dist.jar",
-            "MD5": "6bbc8250b88fd60b1bc0d6103019e820"
           },
           "required": {
             "value": false

@@ -1,5 +1,5 @@
 {
-  "$schema": "file:///C:/Users/Maxime/Documents/GitHub/bedragoth/schemas/ServerMetaSchema.schema.json",
+  "$schema": "file:///C:/Documents/launcher/schemas/ServerMetaSchema.schema.json",
   "meta": {
     "version": "1.0.0",
     "name": "Bedragoth (Minecraft 1.12.2)",
