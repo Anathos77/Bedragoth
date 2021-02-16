@@ -1,5 +1,5 @@
 {
-  "$schema": "file:///C:/Users/Maxime/Documents/GitHub/bedragoth/schemas/DistroMetaSchema.schema.json",
+  "$schema": "file:///C:/Documents/launcher/schemas/DistroMetaSchema.schema.json",
   "meta": {
     "rss": "<LINK TO RSS FEED>",
     "discord": {
