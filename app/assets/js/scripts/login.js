@@ -171,14 +171,14 @@ function resolveError(err){
         }
     } else {
         if(err.error != null){
-            if(err.error === 'ForbiddenOperationException'){
+            if(err.error === 'Erreur'){
                 if(err.errorMessage != null){
                     if(err.errorMessage === 'Mauvais profil ou mauvais mot de passe.'){
                         return {
                             title: Lang.queryJS('login.error.invalidCredentials.title'),
                             desc: Lang.queryJS('login.error.invalidCredentials.desc')
                         }
-                    } else if(err.errorMessage === 'Invalid credentials.'){
+                    } else if(err.errorMessage === 'Les informations identification sont invalides .'){
                         return {
                             title: Lang.queryJS('login.error.rateLimit.title'),
                             desc: Lang.queryJS('login.error.rateLimit.desc')
