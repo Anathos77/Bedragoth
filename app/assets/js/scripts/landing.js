@@ -636,10 +636,10 @@ function dlAsync(login = true){
 
             // If these properties are not defined it's likely an error.
             if(m.result.forgeData == null || m.result.versionData == null){
-                loggerLaunchSuite.error('Error during validation:', m.result)
+                loggerLaunchSuite.error('Erreur pendant la validation:', m.result)
 
-                loggerLaunchSuite.error('Error during launch', m.result.error)
-                showLaunchFailure('Error During Launch', 'Please check the console (CTRL + Shift + i) for more details.')
+                loggerLaunchSuite.error('Erreur pendant le lancement', m.result.error)
+                showLaunchFailure('Erreur pendant le lancement', 'Vérifier la console (CTRL + Shift + i) pour plus de détailsé.')
 
                 allGood = false
             }
@@ -654,7 +654,7 @@ function dlAsync(login = true){
                 setLaunchDetails('Launching game..')
 
                 // const SERVER_JOINED_REGEX = /\[.+\]: \[CHAT\] [a-zA-Z0-9_]{1,16} joined the game/
-                const SERVER_JOINED_REGEX = new RegExp(`\\[.+\\]: \\[CHAT\\] ${authUser.displayName} joined the game`)
+                const SERVER_JOINED_REGEX = new RegExp(`\\[.+\\]: \\[CHAT\\] ${authUser.displayName} vient d'attérir en Bedragoth`)
 
                 const onLoadComplete = () => {
                     toggleLaunchArea(false)
@@ -708,7 +708,7 @@ function dlAsync(login = true){
                     proc.stdout.on('data', tempListener)
                     proc.stderr.on('data', gameErrorListener)
 
-                    setLaunchDetails('Done. Enjoy the server!')
+                    setLaunchDetails('Préparatif terminé. Destination Bedragoth')
 
                     // Init Discord Hook
                     const distro = DistroManager.getDistribution()
@@ -725,8 +725,8 @@ function dlAsync(login = true){
 
                 } catch(err) {
 
-                    loggerLaunchSuite.error('Error during launch', err)
-                    showLaunchFailure('Error During Launch', 'Please check the console (CTRL + Shift + i) for more details.')
+                    loggerLaunchSuite.error('Erreur pendant le lancement', err)
+                    showLaunchFailure('Erreur pendant le lancement', 'Vérifier la console (CTRL + Shift + i) pour plus de détails.')
 
                 }
             }
@@ -740,7 +740,7 @@ function dlAsync(login = true){
     // Begin Validations
 
     // Validate Forge files.
-    setLaunchDetails('Loading server information..')
+    setLaunchDetails('Chargement des informations du serveur..')
 
     refreshDistributionIndex(true, (data) => {
         onDistroRefresh(data)
@@ -867,7 +867,7 @@ let newsLoadingListener = null
  */
 function setNewsLoading(val){
     if(val){
-        const nLStr = 'Checking for News'
+        const nLStr = 'Recherche information'
         let dotStr = '..'
         nELoadSpan.innerHTML = nLStr + dotStr
         newsLoadingListener = setInterval(() => {

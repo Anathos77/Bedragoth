@@ -21,7 +21,7 @@ builder.build({
         appId: 'Bedragoth',
         productName: 'Bedragoth Launcher',
         artifactName: '${productName}-setup-${version}.${ext}',
-        copyright: 'Copyright © 2018-2020 Daniel Scalzi',
+        copyright: 'Copyright © 2018-2020 Anathos',
         directories: {
             buildResources: 'build',
             output: 'dist'
