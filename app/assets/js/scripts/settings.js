@@ -361,7 +361,7 @@ function bindAuthAccountLogOut(){
                 setOverlayContent(
                     "Attention - Ceci est votre dernier compte",
                     'Pour utiliser le launcher, vous devez être connecté à au moins un compte. Vous devrez vous reconnecter après.<br><br>Voulez vous vraiment vous déconnecter?',
-                    'Je\'sui sûr',
+                    'Je suis sûr',
                     'Annuler'
                 )
                 setOverlayHandler(() => {
@@ -415,7 +415,7 @@ function refreshAuthAccountSelected(uuid){
         const selBtn = val.getElementsByClassName('settingsAuthAccountSelect')[0]
         if(uuid === val.getAttribute('uuid')){
             selBtn.setAttribute('selected', '')
-            selBtn.innerHTML = 'Selected Account &#10004;'
+            selBtn.innerHTML = 'Séléction de compte &#10004;'
         } else {
             if(selBtn.hasAttribute('selected')){
                 selBtn.removeAttribute('selected')
@@ -458,9 +458,9 @@ function populateAuthAccounts(){
                     </div>
                 </div>
                 <div class="settingsAuthAccountActions">
-                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Selected Account &#10004;' : '>Select Account'}</button>
+                    <button class="settingsAuthAccountSelect" ${selectedUUID === acc.uuid ? 'selected>Séléction de Compte &#10004;' : '>Select Account'}</button>
                     <div class="settingsAuthAccountWrapper">
-                        <button class="settingsAuthAccountLogOut">Log Out</button>
+                        <button class="settingsAuthAccountLogOut">Se déconnecter</button>
                     </div>
                 </div>
             </div>
