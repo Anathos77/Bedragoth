@@ -84,7 +84,7 @@ exports.validateSelected = async function(){
             ConfigManager.save()
         } catch(err) {
             logger.debug('Error while validating selected profile:', err)
-            if(err && err.error === 'ForbiddenOperationException'){
+            if(err && err.error === 'Erreur'){
                 // What do we do?
             }
             logger.log('Account access token is invalid.')
