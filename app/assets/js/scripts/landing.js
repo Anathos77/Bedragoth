@@ -212,7 +212,7 @@ const refreshMojangStatuses = async function(){
         }
 
     } catch (err) {
-        loggerLanding.warn('Impossible rafraichir statut Mojang')
+        loggerLanding.warn('Impossible de rafraichir le statut Mojang')
         loggerLanding.debug(err)
     }
     
@@ -547,17 +547,17 @@ function dlAsync(login = true){
                 case 'version':
                     setLaunchPercentage(40, 100)
                     loggerLaunchSuite.log('Chargement de la version .')
-                    setLaunchDetails('Validating asset integrity..')
+                    setLaunchDetails('Valider intégrité des actifs..')
                     break
                 case 'assets':
                     setLaunchPercentage(60, 100)
-                    loggerLaunchSuite.log('Asset Validation Complete')
-                    setLaunchDetails('Validating library integrity..')
+                    loggerLaunchSuite.log('Validation des actifs terminée')
+                    setLaunchDetails('Validation de intégrité de la bibliothèque')
                     break
                 case 'libraries':
                     setLaunchPercentage(80, 100)
-                    loggerLaunchSuite.log('Library validation complete.')
-                    setLaunchDetails('Validating miscellaneous file integrity..')
+                    loggerLaunchSuite.log('Validation de la bibliothèque terminée.')
+                    setLaunchDetails('Validation de intégrité des fichiers divers')
                     break
                 case 'files':
                     setLaunchPercentage(100, 100)
@@ -580,7 +580,7 @@ function dlAsync(login = true){
                     remote.getCurrentWindow().setProgressBar(2)
 
                     // Download done, extracting.
-                    const eLStr = 'Extracting libraries'
+                    const eLStr = 'Extraction de bibliothèques'
                     let dotStr = ''
                     setLaunchDetails(eLStr)
                     progressListener = setInterval(() => {
@@ -686,7 +686,7 @@ function dlAsync(login = true){
                 const gameStateChange = function(data){
                     data = data.trim()
                     if(SERVER_JOINED_REGEX.test(data)){
-                        DiscordWrapper.updateDetails('Exploring the Realm!')
+                        DiscordWrapper.updateDetails('Explorer le royaume!')
                     } else if(GAME_JOINED_REGEX.test(data)){
                         DiscordWrapper.updateDetails('Voyage en Bedragoth!')
                     }
@@ -708,7 +708,7 @@ function dlAsync(login = true){
                     proc.stdout.on('data', tempListener)
                     proc.stderr.on('data', gameErrorListener)
 
-                    setLaunchDetails('Préparatif terminé. Destination Bedragoth')
+                    setLaunchDetails('Destination Bedragoth')
 
                     // Init Discord Hook
                     const distro = DistroManager.getDistribution()
