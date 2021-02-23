@@ -547,22 +547,22 @@ function dlAsync(login = true){
                 case 'version':
                     setLaunchPercentage(40, 100)
                     loggerLaunchSuite.log('Chargement de la version .')
-                    setLaunchDetails('Valider intégrité des actifs..')
+                    setLaunchDetails('Préparatif pour le voyage..')
                     break
                 case 'assets':
                     setLaunchPercentage(60, 100)
                     loggerLaunchSuite.log('Validation des actifs terminée')
-                    setLaunchDetails('Validation de intégrité de la bibliothèque')
+                    setLaunchDetails('Validation de la bibliothèque')
                     break
                 case 'libraries':
                     setLaunchPercentage(80, 100)
                     loggerLaunchSuite.log('Validation de la bibliothèque terminée.')
-                    setLaunchDetails('Validation de intégrité des fichiers divers')
+                    setLaunchDetails('Validation des fichiers divers')
                     break
                 case 'files':
                     setLaunchPercentage(100, 100)
                     loggerLaunchSuite.log('Téléchargement fichier terminé.')
-                    setLaunchDetails('Téléchargement fichier..')
+                    setLaunchDetails('Téléchargement des fichiers..')
                     break
             }
         } else if(m.context === 'progress'){
