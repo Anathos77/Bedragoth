@@ -1308,7 +1308,7 @@ function populateSettingsUpdateInformation(data){
         settingsUpdateButtonStatus('Vérifier les mises à jour', false, () => {
             if(!isDev){
                 ipcRenderer.send('autoUpdateAction', 'checkForUpdate')
-                settingsUpdateButtonStatus('Checking for Updates..', true)
+                settingsUpdateButtonStatus('Recherche de mise à jour…', true)
             }
         })
     }
