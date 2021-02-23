@@ -3,9 +3,9 @@
   "meta": {
     "rss": "<LINK TO RSS FEED>",
     "discord": {
-      "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
-      "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
-      "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      "clientId": "324121469410082816",
+      "smallImageText": "Joue à Bedragoth",
+      "smallImageKey": "https://raw.githubusercontent.com/Anathos77/Test/master/icon.png.png"
     }
   }
 }
