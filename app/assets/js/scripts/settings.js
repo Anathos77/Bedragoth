@@ -337,11 +337,11 @@ function bindAuthAccountSelect(){
             for(let i=0; i<selectBtns.length; i++){
                 if(selectBtns[i].hasAttribute('selected')){
                     selectBtns[i].removeAttribute('selected')
-                    selectBtns[i].innerHTML = 'Séléction de compte'
+                    selectBtns[i].innerHTML = 'Sélection de compte'
                 }
             }
             val.setAttribute('selected', '')
-            val.innerHTML = 'Séléction de compte &#10004;'
+            val.innerHTML = 'Sélection de compte &#10004;'
             setSelectedAccount(val.closest('.settingsAuthAccount').getAttribute('uuid'))
         }
     })
@@ -420,7 +420,7 @@ function refreshAuthAccountSelected(uuid){
             if(selBtn.hasAttribute('selected')){
                 selBtn.removeAttribute('selected')
             }
-            selBtn.innerHTML = 'Séléction de compte'
+            selBtn.innerHTML = 'Sélection de compte'
         }
     })
 }
